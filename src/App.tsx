@@ -77,9 +77,7 @@ function App(): JSX.Element {
 
           <ul>
             <li>
-              <div>
-                <img src="" alt="project thumbnail" />
-              </div>
+              <img src="" alt="project thumbnail" />
 
               <div>
                 <h3>프로젝트 명1</h3>
@@ -88,9 +86,7 @@ function App(): JSX.Element {
             </li>
 
             <li>
-              <div>
-                <img src="" alt="project thumbnail" />
-              </div>
+              <img src="" alt="project thumbnail" />
 
               <div>
                 <h3>프로젝트 명2</h3>
@@ -99,9 +95,7 @@ function App(): JSX.Element {
             </li>
 
             <li>
-              <div>
-                <img src="" alt="project thumbnail" />
-              </div>
+              <img src="" alt="project thumbnail" />
 
               <div>
                 <h3>프로젝트 명3</h3>
