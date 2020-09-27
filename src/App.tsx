@@ -1,9 +1,10 @@
 import React from 'react';
+import './App.sass';
 
 function App(): JSX.Element {
   return (
     <>
-      <nav>
+      <nav className="top-nav">
         <h1>
           <a href="#Intro">Juunini</a>
         </h1>
@@ -38,14 +39,18 @@ function App(): JSX.Element {
             <ul>
               {['이 개발언어를 좋아해요', '저는 이런 성격이에요'].map(
                 (item, i) => (
-                  <li key={i}>{`0${i + 1} ${item}`}</li>
+                  <li key={i}>
+                    <a href={`#about${i}`}>
+                    {`0${i + 1} ${item}`}
+                    </a>
+                  </li>
                 )
               )}
             </ul>
           </nav>
 
           <div>
-            <article>
+            <article id="about0">
               <img src="" alt="mugcups" />
               <h3>이 개발언어를 좋아해요</h3>
               <p>
@@ -56,7 +61,7 @@ function App(): JSX.Element {
               </p>
             </article>
 
-            <article>
+            <article id="about1">
               <img src="" alt="mbti" />
               <h3>저는 이런 성격이에요</h3>
               <ul>
@@ -72,9 +77,7 @@ function App(): JSX.Element {
 
           <ul>
             <li>
-              <div>
-                <img src="" alt="project thumbnail" />
-              </div>
+              <img src="" alt="project thumbnail" />
 
               <div>
                 <h3>프로젝트 명1</h3>
@@ -83,9 +86,7 @@ function App(): JSX.Element {
             </li>
 
             <li>
-              <div>
-                <img src="" alt="project thumbnail" />
-              </div>
+              <img src="" alt="project thumbnail" />
 
               <div>
                 <h3>프로젝트 명2</h3>
@@ -94,9 +95,7 @@ function App(): JSX.Element {
             </li>
 
             <li>
-              <div>
-                <img src="" alt="project thumbnail" />
-              </div>
+              <img src="" alt="project thumbnail" />
 
               <div>
                 <h3>프로젝트 명3</h3>
@@ -117,7 +116,7 @@ function App(): JSX.Element {
                 rel="noreferrer noopener"
               >
                 <img src="" alt="github" />
-                Github : https://github.com/juunini
+                <span>Github : https://github.com/juunini</span>
               </a>
             </li>
 
@@ -128,14 +127,18 @@ function App(): JSX.Element {
                 rel="noreferrer noopener"
               >
                 <img src="" alt="velog" />
-                Velog : https://velog.io/@juunini
+                <span>Velog : https://velog.io/@juunini</span>
               </a>
             </li>
 
             <li>
-              <a href="mailto:juuni.ni.i@gmail.com">
+              <a 
+                href="mailto:juuni.ni.i@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src="" alt="gmail" />
-                Email : juuni.ni.i@gmail.com
+                <span>Email : juuni.ni.i@gmail.com</span>
               </a>
             </li>
           </ul>
