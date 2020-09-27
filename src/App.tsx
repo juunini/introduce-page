@@ -39,14 +39,18 @@ function App(): JSX.Element {
             <ul>
               {['이 개발언어를 좋아해요', '저는 이런 성격이에요'].map(
                 (item, i) => (
-                  <li key={i}>{`0${i + 1} ${item}`}</li>
+                  <li key={i}>
+                    <a href={`#about${i}`}>
+                    {`0${i + 1} ${item}`}
+                    </a>
+                  </li>
                 )
               )}
             </ul>
           </nav>
 
           <div>
-            <article>
+            <article id="about0">
               <img src="" alt="mugcups" />
               <h3>이 개발언어를 좋아해요</h3>
               <p>
@@ -57,7 +61,7 @@ function App(): JSX.Element {
               </p>
             </article>
 
-            <article>
+            <article id="about1">
               <img src="" alt="mbti" />
               <h3>저는 이런 성격이에요</h3>
               <ul>
