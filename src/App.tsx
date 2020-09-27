@@ -17,6 +17,22 @@ function App(): JSX.Element {
           ))}
         </ul>
       </nav>
+
+      <main>
+        <section id="About">
+          <div>
+            <h2>JUUNINI</h2>
+            <p>
+              Front-end &#38; Back-end
+              <br />
+              Developer
+            </p>
+          </div>
+          <div>
+            <img src="" alt="profile" />
+          </div>
+        </section>
+      </main>
     </>
   );
 }
