@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from '@reach/router';
 
 function App(): JSX.Element {
   return (
     <>
       <nav>
         <h1>
-          <Link to="/">Juunini</Link>
+          <a href="#Intro">Juunini</a>
         </h1>
 
         <ul>
@@ -19,7 +18,7 @@ function App(): JSX.Element {
       </nav>
 
       <main>
-        <section id="About">
+        <section id="Intro">
           <div>
             <h2>JUUNINI</h2>
             <p>
