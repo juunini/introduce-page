@@ -1,11 +1,23 @@
 import React from 'react';
-import TopNav from './components/TopNav';
+import { Link } from '@reach/router';
 
 function App(): JSX.Element {
   return (
-    <div>
-      <TopNav logo="Juunini" items={['About', 'Projects', 'Contact']} />
-    </div>
+    <>
+      <nav>
+        <h1>
+          <Link to="/">Juunini</Link>
+        </h1>
+
+        <ul>
+          {['About', 'Projects', 'Contact'].map((item) => (
+            <li key={item}>
+              <a href={'#' + item}>{item}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 }
 
