@@ -1,0 +1,53 @@
+html, body, #root
+  height: 100%
+  overflow: hidden
+  
+body
+  font-size: 16px
+  font-family: Arial, Helvetica, sans-serif
+  
+*, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+li
+  list-style: none
+
+#root
+  display: flex
+  flex-direction: column
+
+.top-nav
+  flex-grow: 0
+  position: sticky
+  top: 0
+  left: 0
+  display: flex
+  align-content: center
+  align-items: center
+  width: 100%
+  min-height: 5rem
+  padding: 0 2.5rem
+  font-size: 1.5rem
+  color: #FFFFFF
+  background-color: #000000
+
+  h1
+    margin-right: 6rem
+
+  ul
+    display: flex
+    align-content: center
+  
+  li
+    margin-right: 4rem
+
+  a
+    font-style: none
+    text-decoration: none
+    color: inherit
+
+main
+  flex-grow: 1
+  overflow: auto

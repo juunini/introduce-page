@@ -1,9 +1,10 @@
 import React from 'react';
+import './App.sass';
 
 function App(): JSX.Element {
   return (
     <>
-      <nav>
+      <nav className="top-nav">
         <h1>
           <a href="#Intro">Juunini</a>
         </h1>
