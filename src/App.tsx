@@ -116,7 +116,7 @@ function App(): JSX.Element {
                 rel="noreferrer noopener"
               >
                 <img src="" alt="github" />
-                Github : https://github.com/juunini
+                <span>Github : https://github.com/juunini</span>
               </a>
             </li>
 
@@ -127,14 +127,18 @@ function App(): JSX.Element {
                 rel="noreferrer noopener"
               >
                 <img src="" alt="velog" />
-                Velog : https://velog.io/@juunini
+                <span>Velog : https://velog.io/@juunini</span>
               </a>
             </li>
 
             <li>
-              <a href="mailto:juuni.ni.i@gmail.com">
+              <a 
+                href="mailto:juuni.ni.i@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src="" alt="gmail" />
-                Email : juuni.ni.i@gmail.com
+                <span>Email : juuni.ni.i@gmail.com</span>
               </a>
             </li>
           </ul>
