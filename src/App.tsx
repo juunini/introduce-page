@@ -67,7 +67,7 @@ function App(): JSX.Element {
           </div>
         </section>
 
-        <section id="Project">
+        <section id="Projects">
           <h2>프로젝트</h2>
 
           <ul>
@@ -102,6 +102,41 @@ function App(): JSX.Element {
                 <h3>프로젝트 명3</h3>
                 <p>프로젝트 설명3</p>
               </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="Contact">
+          <h2>Contact</h2>
+
+          <ul>
+            <li>
+              <a
+                href="https://github.com/juunini"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="" alt="github" />
+                Github : https://github.com/juunini
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://velog.io/@juunini"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="" alt="velog" />
+                Velog : https://velog.io/@juunini
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:juuni.ni.i@gmail.com">
+                <img src="" alt="gmail" />
+                Email : juuni.ni.i@gmail.com
+              </a>
             </li>
           </ul>
         </section>
