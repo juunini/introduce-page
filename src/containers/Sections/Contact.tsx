@@ -1,43 +1,31 @@
 import React from 'react';
 
+import Item from '../../components/Contact/Item';
+
 function Contact(): JSX.Element {
   return (
     <section id="Contact">
       <h2>Contact</h2>
 
       <ul>
-        <li>
-          <a
-            href="https://github.com/juunini"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="" alt="github" />
-            <span>Github : https://github.com/juunini</span>
-          </a>
-        </li>
+        <Item href="https://github.com/juunini" description="깃허브 링크">
+          <img src="" alt="github" />
+        </Item>
 
-        <li>
-          <a
-            href="https://velog.io/@juunini"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="" alt="velog" />
-            <span>Velog : https://velog.io/@juunini</span>
-          </a>
-        </li>
+        <Item href="https://velog.io/@juunini" description="개발 블로그">
+          <img src="" alt="velog" />
+        </Item>
 
-        <li>
-          <a
-            href="mailto:juuni.ni.i@gmail.com"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <img src="" alt="gmail" />
-            <span>Email : juuni.ni.i@gmail.com</span>
-          </a>
-        </li>
+        <Item
+          href="https://medium.com/@juuni.ni.i"
+          description="개발과는 무관한 블로그"
+        >
+          <img src="" alt="medium" />
+        </Item>
+
+        <Item href="mailto:juuni.ni.i@gmail.com" description="Email">
+          <img src="" alt="gmail" />
+        </Item>
       </ul>
     </section>
   );
