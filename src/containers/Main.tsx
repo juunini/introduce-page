@@ -15,3 +15,5 @@ function Main(): JSX.Element {
     </main>
   );
 }
+
+export default Main;
