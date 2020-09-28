@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ScrollNav from '../../components/ScrollNav';
+import Article from '../../components/About/Article';
 
 function About(): JSX.Element {
   return (
@@ -10,25 +11,31 @@ function About(): JSX.Element {
       </ScrollNav>
 
       <div>
-        <article id="about0">
-          <img src="" alt="mugcups" />
-          <h3>이 개발언어를 좋아해요</h3>
+        <Article
+          id="about0"
+          imgSrc=""
+          imgAlt="mugcups"
+          title="이 개발언어를 좋아해요"
+        >
           <p>
             <strong>Node.JS &#38; Golang</strong>
             <br />
             직접 머그컵에 그림까지 그려넣을 정도로
             <br />이 언어들을 좋아해요.
           </p>
-        </article>
+        </Article>
 
-        <article id="about1">
-          <img src="" alt="mbti" />
-          <h3>저는 이런 성격이에요</h3>
+        <Article
+          id="about1"
+          imgSrc=""
+          imgAlt="mbti"
+          title="저는 이런 성격이에요"
+        >
           <ul>
             <li>할 말은 똑부러지게 하는 성격이에요.</li>
             <li>성장욕구가 넘쳐요.</li>
           </ul>
-        </article>
+        </Article>
       </div>
     </section>
   );
