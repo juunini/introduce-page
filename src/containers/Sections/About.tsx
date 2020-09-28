@@ -6,15 +6,11 @@ function About(): JSX.Element {
       <nav>
         <h2>저는 이런 사람이에요</h2>
         <ul>
-          {['이 개발언어를 좋아해요', '저는 이런 성격이에요'].map(
-            (item, i) => (
-              <li key={i}>
-                <a href={`#about${i}`}>
-                {`0${i + 1} ${item}`}
-                </a>
-              </li>
-            )
-          )}
+          {['이 개발언어를 좋아해요', '저는 이런 성격이에요'].map((item, i) => (
+            <li key={i}>
+              <a href={`#about${i}`}>{`0${i + 1} ${item}`}</a>
+            </li>
+          ))}
         </ul>
       </nav>
 

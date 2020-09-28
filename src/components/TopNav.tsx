@@ -3,7 +3,7 @@ import React from 'react';
 type TopNavProps = {
   title: string;
   items: string[];
-}
+};
 
 function TopNav({ title, items }: TopNavProps): JSX.Element {
   return (
@@ -20,7 +20,7 @@ function TopNav({ title, items }: TopNavProps): JSX.Element {
         ))}
       </ul>
     </nav>
-  )
+  );
 }
 
 export default TopNav;

@@ -29,7 +29,7 @@ function Contact(): JSX.Element {
         </li>
 
         <li>
-          <a 
+          <a
             href="mailto:juuni.ni.i@gmail.com"
             target="_blank"
             rel="noreferrer noopener"
