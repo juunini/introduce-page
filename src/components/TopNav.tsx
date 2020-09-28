@@ -3,16 +3,14 @@ import React from 'react';
 import ScrollLink from './ScrollLink';
 
 type TopNavProps = {
-  title: string;
   items: string[];
+  children?: string | JSX.Element;
 };
 
-function TopNav({ title, items }: TopNavProps): JSX.Element {
+function TopNav({ children, items }: TopNavProps): JSX.Element {
   return (
     <nav className="top-nav">
-      <h1>
-        <ScrollLink to="Intro">{title}</ScrollLink>
-      </h1>
+      <h1>{children}</h1>
 
       <ul>
         {items.map((item) => (
