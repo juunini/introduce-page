@@ -1,22 +1,15 @@
 import React from 'react';
+
 import './App.sass';
+import TopNav from './components/TopNav';
 
 function App(): JSX.Element {
   return (
     <>
-      <nav className="top-nav">
-        <h1>
-          <a href="#Intro">Juunini</a>
-        </h1>
-
-        <ul>
-          {['About', 'Projects', 'Contact'].map((item) => (
-            <li key={item}>
-              <a href={'#' + item}>{item}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <TopNav
+        title="Juunini"
+        items={['About', 'Projects', 'Contact']}
+      />
 
       <main>
         <section id="Intro">
