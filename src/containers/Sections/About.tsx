@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+
+import ScrollLink from '../../components/ScrollLink';
 
 function About(): JSX.Element {
   return (
@@ -9,18 +10,7 @@ function About(): JSX.Element {
         <ul>
           {['이 개발언어를 좋아해요', '저는 이런 성격이에요'].map((item, i) => (
             <li key={i}>
-              <Link
-                activeClass="active"
-                to={`about${i}`}
-                spy={true}
-                smooth={true}
-                hashSpy={true}
-                duration={500}
-                isDynamic={true}
-                containerId="main"
-              >
-                {`0${i + 1} ${item}`}
-              </Link>
+              <ScrollLink to={`about${i}`}>{`0${i + 1} ${item}`}</ScrollLink>
             </li>
           ))}
         </ul>
