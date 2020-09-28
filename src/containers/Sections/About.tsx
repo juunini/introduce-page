@@ -1,20 +1,13 @@
 import React from 'react';
 
-import ScrollLink from '../../components/ScrollLink';
+import ScrollNav from '../../components/ScrollNav';
 
 function About(): JSX.Element {
   return (
     <section id="About">
-      <nav>
+      <ScrollNav items={['이 개발언어를 좋아해요', '저는 이런 성격이에요']}>
         <h2>저는 이런 사람이에요</h2>
-        <ul>
-          {['이 개발언어를 좋아해요', '저는 이런 성격이에요'].map((item, i) => (
-            <li key={i}>
-              <ScrollLink to={`about${i}`}>{`0${i + 1} ${item}`}</ScrollLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      </ScrollNav>
 
       <div>
         <article id="about0">
