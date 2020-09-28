@@ -7,10 +7,7 @@ import Main from './containers/Main';
 function App(): JSX.Element {
   return (
     <>
-      <TopNav
-        title="Juunini"
-        items={['About', 'Projects', 'Contact']}
-      />
+      <TopNav title="Juunini" items={['About', 'Projects', 'Contact']} />
 
       <Main />
     </>
