@@ -27,7 +27,7 @@ function Article1(): JSX.Element {
           src="/images/mugcups.jpg"
           alt="mugcups"
           style={{
-            maxWidth: '200px',
+            maxWidth: '12.5rem',
             marginRight: '4rem',
           }}
         />

@@ -12,7 +12,13 @@ function Intro(): JSX.Element {
         </p>
       </div>
       <div>
-        <img src="" alt="profile" />
+        <img
+          src="/images/profile.jpg"
+          alt="profile"
+          style={{
+            maxWidth: '20rem',
+          }}
+        />
       </div>
     </section>
   );
