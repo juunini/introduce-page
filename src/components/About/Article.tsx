@@ -2,26 +2,11 @@ import React from 'react';
 
 type ArticleProps = {
   id: string;
-  imgSrc: string;
-  imgAlt: string;
-  title: string;
-  children?: string | JSX.Element;
+  children: JSX.Element[];
 };
 
-function Article({
-  id,
-  imgSrc,
-  imgAlt,
-  title,
-  children,
-}: ArticleProps): JSX.Element {
-  return (
-    <article id={id}>
-      <img src={imgSrc} alt={imgAlt} />
-      <h3>{title}</h3>
-      {children}
-    </article>
-  );
+function Article({ id, children }: ArticleProps): JSX.Element {
+  return <article id={id}>{children}</article>;
 }
 
 export default Article;
