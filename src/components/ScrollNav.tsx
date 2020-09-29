@@ -14,7 +14,7 @@ function ScrollNav({ items, children }: ScrollNavProps): JSX.Element {
       <ul>
         {items.map((item, i) => (
           <li key={i}>
-            <ScrollLink to={`about${i}`}>{`0${i + 1} ${item}`}</ScrollLink>
+            <ScrollLink to={`about${i}`}>{item}</ScrollLink>
           </li>
         ))}
       </ul>
