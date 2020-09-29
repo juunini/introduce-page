@@ -8,12 +8,10 @@ type ItemProps = {
 
 function Item({ href, description, children }: ItemProps): JSX.Element {
   return (
-    <li>
-      <a href={href} target="_blank" rel="noreferrer noopener">
-        {children}
-        <span>{description}</span>
-      </a>
-    </li>
+    <a href={href} target="_blank" rel="noreferrer noopener">
+      {children}
+      <span>{description}</span>
+    </a>
   );
 }
 

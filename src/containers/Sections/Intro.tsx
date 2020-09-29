@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Intro.sass';
+
 function Intro(): JSX.Element {
   return (
     <section id="Intro">
