@@ -16,7 +16,6 @@ function ScrollLink({ to, children }: ScrollLinkProps): JSX.Element {
       hashSpy={true}
       duration={500}
       isDynamic={true}
-      containerId="main"
     >
       {children}
     </Link>

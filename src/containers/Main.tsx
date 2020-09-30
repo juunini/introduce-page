@@ -7,7 +7,7 @@ import Contact from './Sections/Contact';
 
 function Main(): JSX.Element {
   return (
-    <main id="main">
+    <main>
       <Intro />
       <About />
       <Projects />
