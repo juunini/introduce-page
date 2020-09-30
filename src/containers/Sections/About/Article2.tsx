@@ -40,7 +40,6 @@ function Article2(): JSX.Element {
           alt="눈물 짤"
           style={{
             maxHeight: '10rem',
-            marginRight: '2rem',
           }}
         />
         <p>
@@ -76,7 +75,6 @@ function Article2(): JSX.Element {
           alt="펀쿨섹좌"
           style={{
             maxWidth: '10rem',
-            marginRight: '2rem',
           }}
         />
         <p>

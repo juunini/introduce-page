@@ -1,0 +1,96 @@
+.mobile-top-nav-button
+  display: none
+
+.top-nav
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1000
+  display: flex
+  align-content: center
+  align-items: center
+  width: 100vw
+  min-height: 5rem
+  padding: 0 2.5rem
+  font-size: 1.5rem
+  color: #FFFFFF
+  background-color: rgba(0, 0, 0, 0.8)
+  backdrop-filter: blur(10px)
+
+  h1
+    margin-right: 6rem
+
+  ul
+    display: flex
+    align-content: center
+  
+  li
+    margin-right: 4rem
+
+  a
+    text-decoration: none
+    color: inherit
+    transition: 500ms
+    cursor: pointer
+
+    &.active
+      color: #FF90F2
+
+@media screen and ( max-width: 768px )
+  .top-nav
+    top: -20rem
+    padding-top: 2rem
+    flex-direction: column
+    transition: transform 500ms
+
+    &.active
+      transform: translateY(20rem)
+
+    h1
+      margin-right: 0
+      margin-bottom: 2rem
+
+    ul
+      flex-direction: column
+
+    li
+      margin-right: 0
+      margin-bottom: 2rem
+
+  .mobile-top-nav-button
+    position: fixed
+    top: 2rem
+    right: 2rem
+    z-index: 1001
+    display: block
+    padding: 10px
+    border-radius: 4px
+    background-color: rgba(0, 0, 0, 0.4)
+    backdrop-filter: blur(10px)
+    cursor: pointer
+
+    span
+      display: block
+      width: 30px
+      height: 4px
+      margin-bottom: 6px
+      background-color: #FFFFFF
+      border-radius: 4px
+      transition: 500ms
+
+      &:last-of-type
+        margin-bottom: 0
+
+    &.active
+      span
+        position: relative
+        top: 1px
+        transform: rotate(45deg)
+
+        &:first-of-type
+          top: 11px
+          transform: rotate(-45deg)
+
+        &:last-of-type
+          transition: 0ms
+          visibility: hidden
