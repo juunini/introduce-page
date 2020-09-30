@@ -28,7 +28,6 @@ function Article1(): JSX.Element {
           alt="mugcups"
           style={{
             maxWidth: '12.5rem',
-            marginRight: '4rem',
           }}
         />
         <p>
