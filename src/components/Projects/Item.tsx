@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type ItemProps = {
   imgSrc: string;
   imgAlt: string;
   title: string;
-  children?: string | JSX.Element;
+  children?: ReactNode;
 };
 
 function Item({ imgSrc, imgAlt, title, children }: ItemProps): JSX.Element {
