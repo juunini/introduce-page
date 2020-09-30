@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Intro.sass';
+
 function Intro(): JSX.Element {
   return (
     <section id="Intro">
@@ -12,7 +14,13 @@ function Intro(): JSX.Element {
         </p>
       </div>
       <div>
-        <img src="" alt="profile" />
+        <img
+          src="/images/profile.jpg"
+          alt="profile"
+          style={{
+            maxWidth: '20rem',
+          }}
+        />
       </div>
     </section>
   );
